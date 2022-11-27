@@ -94,6 +94,23 @@ label {
 input {
   min-width: 350px;
   height: 30px;
+  padding-left: 10px;
+  border-color: #e6e7eb;
+  border-style: solid;
+  border-radius: 5px;
+}
+
+input:focus {
+  border-color: #6590d1;
+}
+
+input:focus-visible {
+  border-color: #3455d8;
+  box-shadow: 0 3px 7px rgba(78, 78, 78, 0.5);
+}
+
+input:invalid {
+  border-color: rgb(173, 20, 20);
 }
 
 form div {
@@ -110,4 +127,9 @@ button {
   border: none;
   border-radius: 5px;
   margin-bottom: 20px;
+}
+
+a {
+  text-decoration: none;
+  color: green;
 }
