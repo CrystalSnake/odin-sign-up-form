@@ -105,12 +105,8 @@ input {
   border-radius: 5px;
 }
 
-input:focus {
-  border-color: #6590d1;
-}
-
 input:focus-visible {
-  border-color: #3455d8;
+  outline: #3455d8;
   box-shadow: 0 3px 7px rgba(78, 78, 78, 0.5);
 }
 
@@ -122,13 +118,6 @@ input:focus-visible:invalid {
 input:focus-visible:valid {
   border-color: rgb(20, 173, 46);
   background-color: rgba(9, 255, 0, 0.24);
-}
-
-.first-name input:valid,
-.last-name input:valid,
-.e-mail input:valid,
-.pass input:valid {
-  border-color: rgb(20, 173, 46);
 }
 
 form div {
@@ -145,6 +134,10 @@ button {
   border: none;
   border-radius: 5px;
   margin-bottom: 20px;
+}
+
+button:hover {
+  background-color: #395827;
 }
 
 a {
