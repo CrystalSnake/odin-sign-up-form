@@ -10,11 +10,15 @@
   </head>
   <body>
     <aside>
-      <div class="logo-overlay">
+      <div class="logo-overlay overlay">
         <img src="./odin-lined.png" alt="logo" />
         <p class="logo">Odin</p>
       </div>
-      <p>Photo by on</p>
+      <div class="overlay">
+        <p>
+          Photo from <a href="https://pxhere.com/ru/photo/126830">pxhere</a>
+        </p>
+      </div>
     </aside>
     <main>
       <div class="container">
@@ -30,23 +34,23 @@
         <div class="form-container">
           <form action="#" id="sign_up" method="post">
             <legend>Let's do this!</legend>
-            <div>
+            <div class="first-name">
               <label for="first_name">First name</label>
               <input type="text" name="first_name" id="first_name" required />
             </div>
-            <div>
+            <div class="last-name">
               <label for="last_name">Last name</label>
               <input type="text" name="last_name" id="last_name" required />
             </div>
-            <div>
+            <div class="e-mail">
               <label for="email">Email</label>
               <input type="email" name="email" id="email" required />
             </div>
-            <div>
+            <div class="phone-number">
               <label for="phone">Phone number</label>
               <input type="tel" name="phone" id="phone" />
             </div>
-            <div>
+            <div class="pass">
               <label for="password">Password</label>
               <input
                 type="password"
@@ -57,10 +61,10 @@
                 required
               />
             </div>
-            <div>
+            <div class="pass">
               <label for="confirm_password">Confirm password</label>
               <input
-                type="confirm_password"
+                type="password"
                 name="confirm_password"
                 id="confirm_password"
                 minlength="8"
