@@ -17,15 +17,53 @@
       <p>Photo by on</p>
     </aside>
     <main>
-      <p>
-        This is not a eal online service! You know you need something like this
-        in your live to help you realize your deepest dreams. <br />Sign up
-        <em>now</em> to get started.
-      </p>
-      <p>You <em>know</em> you want to.</p>
-      <form action="#"></form>
-      <button>Create Account</button>
-      <p>Already have an account? <a href="#">Log in</a></p>
+      <div class="container">
+        <div class="description">
+          <p>
+            This is not a real online service! You know you need something like
+            this in your live to help you realize your deepest dreams.
+            <br />Sign up <em>now</em> to get started.
+          </p>
+          <p>You <em>know</em> you want to.</p>
+        </div>
+
+        <div class="form-container">
+          <form action="#" method="post">
+            <legend>Let's do this!</legend>
+            <div>
+              <label for="first_name">First name</label>
+              <input type="text" name="first_name" id="first_name" required />
+            </div>
+            <div>
+              <label for="last_name">Last name</label>
+              <input type="text" name="last_name" id="last_name" required />
+            </div>
+            <div>
+              <label for="email">Email</label>
+              <input type="email" name="email" id="email" required />
+            </div>
+            <div>
+              <label for="phone">Phone number</label>
+              <input type="tel" name="phone" id="phone" />
+            </div>
+            <div>
+              <label for="password">Password</label>
+              <input type="password" name="password" id="password" />
+            </div>
+            <div>
+              <label for="confirm_password">Confirm password</label>
+              <input
+                type="confirm_password"
+                name="confirm_password"
+                id="confirm_password"
+              />
+            </div>
+          </form>
+        </div>
+
+        <button type="submit">Create Account</button>
+        <p>Already have an account? <a href="#">Log in</a></p>
+      </div>
     </main>
   </body>
 </html>
